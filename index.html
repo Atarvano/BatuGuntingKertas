@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batu Gunting Kertas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .choice-image {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center w-screen h-screen">
+    <div class="p-5 bg-white rounded-xl flex gap-5">
+      <div class="space-y-5">
+        <div class="pilihanplayer">
+          <h1 class="text-center">Pilihan Player</h1>
+          <img
+            id="playerChoiceImage"
+            class="choice-image"
+            src=""
+            alt="Player "
+          />
+        </div>
+        <div class="flex gap-2">
+          <button
+            onclick="Play('batu')"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Batu
+            <img src="batu.png" alt="" class="w-12" />
+          </button>
+          <button
+            onclick="Play('gunting')"
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded"
+          >
+            Gunting
+            <img src="gunting.png" alt="" class="w-12 mx-auto" />
+          </button>
+          <button
+            onclick="Play('kertas')"
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Kertas
+            <img src="kertas.png" alt="" class="w-12 flex justify-center" />
+          </button>
+        </div>
+        <h1>Score Anda : <span id="playerScore">0</span></h1>
+      </div>
+
+      <div class="space-y-5">
+        <div class="pilihancomputer">
+          <h1 class="text-center">Pilihan Computer</h1>
+          <img
+            id="computerChoiceImage"
+            class="choice-image"
+            src=""
+            alt="Computer"
+          />
+
+        </div>
+          <div class="flex gap-2">
+            <button
+          
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Batu
+              <img src="batu.png" alt="" class="w-12" />
+            </button>
+            <button
+             
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-2 rounded"
+            >
+              Gunting
+              <img src="gunting.png" alt="" class="w-12 mx-auto" />
+            </button>
+            <button
+            
+              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Kertas
+              <img src="kertas.png" alt="" class="w-12 flex justify-center" />
+            </button>
+          </div>
+    
+          <h1>Score Computer : <span id="computerScore">0</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
